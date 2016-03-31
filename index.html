@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>用于构建用户界面的JAVASCRIPT库 | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Reactjs,ReactJS,ReactJS中文,React,React中文,Reactjs中文文档">
+  <meta name="description" content="ReactJS中文文档, 用于构建用户界面的JAVASCRIPT库">
+
+  <meta property="og:title" content="用于构建用户界面的JAVASCRIPT库 | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://facebook.github.io/react/index.html">
+  <meta property="og:image" content="http://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="用于构建用户界面的Javascript库">
+
+  <link rel="shortcut icon" href="/react/favicon.ico">
+
+  <link rel="stylesheet" href="/react/css/syntax.css">
+  <link rel="stylesheet" href="/react/css/codemirror.css">
+  <link rel="stylesheet" href="/react/css/react.css">
+
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="/react/js/codemirror.js"></script>
+  <script type="text/javascript" src="/react/js/javascript.js"></script>
+  <script type="text/javascript" src="/react/js/react.js"></script>
+  <script type="text/javascript" src="/react/js/JSXTransformer.js"></script>
+  <script type="text/javascript" src="/react/js/live_editor.js"></script>
+  <script type="text/javascript" src="/react/js/showdown.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?2814bad0fb4ce6fddc5d4df4670662cc";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="nav-main">
+      <div class="wrap">
+        <a class="nav-home" href="/react/index.html">
+          <img class="nav-logo" src="/react/img/logo.svg" width="36" height="36">
+          React
+        </a>
+        <ul class="nav-site">
+          <li><a href="/react/docs/getting-started.html">文档</a></li>
+          <li><a href="http://bbs.react-china.org" target="_blank">中文社区</a>
+          <li><a href="/react/downloads.html">下载</a></li>
+          <!-- <li><a href="/react/blog/">博客</a></li> -->
+          <li><a href="https://github.com/reactjs-cn/react-docs">github</a>
+          <li><a href="/react/about/">关于我们</a>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="hero">
+      <div class="wrap">
+        <div class="text"><strong>React</strong></div>
+        <div class="minitext">
+          用于构建用户界面的Javascript库
+        </div>
+
+        <div class="buttons-unit">
+          <a href="/react/docs/getting-started.html" class="button">快速入门</a>
+          <a href="/react/downloads.html" class="button">下载 React v0.13.0</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <section class="content wrap">
+  <section class="light home-section">
+  <div class="marketing-row">
+    <div class="marketing-col">
+      <h3>仅仅是UI</h3>
+      <p>
+        许多人使用React作为MVC架构的V层。
+        尽管React并没有假设过你的其余技术栈，
+        但它仍可以作为一个小特征轻易地在已有项目中使用
+      </p>
+    </div>
+    <div class="marketing-col">
+      <h3>虚拟DOM</h3>
+      <p>
+        React为了更高超的性能而使用虚拟DOM作为其不同的实现。
+        它同时也可以由服务端Node.js渲染 － 而不需要过重的浏览器DOM支持
+      </p>
+    </div>
+    <div class="marketing-col">
+      <h3>数据流</h3>
+      <p>
+        React实现了单向响应的数据流，从而减少了重复代码，这也是它为什么比传统数据绑定更简单。
+      </p>
+    </div>
+  </div>
+</section>
+
+<p><hr class="home-divider" />
+<section class="home-section">
+  <div id="examples">
+    <div class="example">
+      <h3>一个简单的组件</h3>
+      <p>
+        React组件通过一个 <code>render()</code> 方法，接受输入的参数并返回展示的对象。 <br/>
+        以下这个例子使用了JSX，它类似于XML的语法<br/>
+        输入的参数通过 <code>render()</code> 传入组件后，将存储在<code>this.props</code>
+      </p>
+      <p>
+        <strong>JSX是可选的，并不强制要求使用。</strong><br/>
+        点击 &quot;Compiled JS&quot; 可以看到JSX编译之后的JavaScript代码
+      </p>
+      <div id="helloExample"></div>
+    </div>
+    <div class="example">
+      <h3>一个有状态的组件</h3>
+      <p>
+        除了接受输入数据（通过 <code>this.props</code> ），组件还可以保持内部状态数据（通过 <code>this.state</code> ）。当一个组件的状态数据的变化，展现的标记将被重新调用 <code>render()</code> 更新。
+      </p>
+      <div id="timerExample"></div>
+    </div>
+    <div class="example">
+       <h3>一个应用程序</h3>
+       <p>
+          通过使用 <code>props</code> 和 <code>state</code>, 我们可以组合构建一个小型的Todo程序。<br/>
+          下面例子使用 <code>state</code> 去监测当前列表的项以及用户已经输入的文本。
+          尽管事件绑定似乎是以内联的方式，但他们将被收集起来并以事件代理的方式实现。
+        </p>
+        <div id="todoExample"></div>
+    </div>
+    <div class="example">
+      <h3>一个使用外部插件的组件</h3>
+      <p>
+        React是灵活的，并且提供方法允许你跟其他库和框架对接。<br/>
+        下面例子展现了一个案例，使用外部库Markdown实时转化textarea的值。
+      </p>
+      <div id="markdownExample"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/examples/hello.js"></script>
+  <script type="text/javascript" src="js/examples/timer.js"></script>
+  <script type="text/javascript" src="js/examples/todo.js"></script>
+  <script type="text/javascript" src="js/examples/markdown.js"></script>
+</section>
+<hr class="home-divider" />
+<section class="home-bottom-section">
+  <div class="buttons-unit">
+    <a href="docs/getting-started.html" class="button">快速入门</a>
+    <a href="downloads.html" class="button">下载 v0.13.0</a>
+  </div>
+</section></p>
+
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.<br>
+        <a href="/react/acknowledgements.html">Acknowledgements</a>
+      </div>
+      <div class="right">
+        &copy; 2013&ndash;2015 Facebook Inc.<br>
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+</body>
+</html>
